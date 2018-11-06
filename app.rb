@@ -13,7 +13,7 @@ class App < Sinatra::Base
 
   get '@' do
      @numero = params[:number].to_i
-    "#{params[:phrase]}" * @numero 
+    "#{params[:phrase]} " * @numero 
 
   end
 
